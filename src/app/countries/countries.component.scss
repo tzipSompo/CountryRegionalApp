@@ -1,0 +1,139 @@
+#total_result{
+    color:#036182;font-weight:bold;font-size: 20px;
+}
+
+#total_result_number{
+    font-weight:bold;font-size: 30px;
+}
+
+#title_span{
+    font-size: 20px !important;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    font-weight: 100;
+}
+#content_span{
+    margin-top: -4px;
+    font-size: 35px !important;
+}
+
+.card-header.card-header-detail{
+    #flag{
+        font-size: 10px;
+        width:100px;
+        height: 50px;
+    }
+    #flag:before {
+        font-size: 10px !important;
+    }
+    span{
+        float:left;
+    }
+}
+
+
+#crad_last_child {
+    span {
+        color: #006699 !important;
+    }
+    color: #006699 !important;
+}
+
+#search_request{
+    //padding-top: 1rem !important;
+    h5.card-header-section{
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
+}
+
+
+
+
+
+.card-search-section{
+    display: inline-flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top:10px;
+    span{
+        color: #053752 !important;
+        font-weight: bold;
+        margin-left: 10px;
+        line-height: 2.2rem;
+        font-size: 17px;
+        width: 200px!important;
+    }
+    select,input{
+        border-radius: 0px !important; 
+    }
+}
+
+#search_request{
+    //padding-top: 1rem !important;
+    h5.card-header-section{
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
+}
+
+.card-search-section{
+    display: inline-flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top:10px;
+    span{
+        color: #053752 !important;
+        font-weight: bold;
+        margin-left: 10px;
+        line-height: 2.2rem;
+        font-size: 17px;
+    }
+    select,input{
+        border-radius: 0px !important; 
+    }
+}
+
+.card-search{
+    background-color: #9dc1cf;
+}
+
+.card-details-section{
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.card-details-header{
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-details{
+    background-color: #9dc1cf;
+}
+
+.card-details-section span {
+    font-weight: bold;
+}
+
+.resultGridDisplay {
+    min-height: 230px;
+    background-color: white!important;
+}
+
+.resultGridDisplay span {
+    max-width: calc(100% - 110px) !important;
+}
+
+.resultGridDisplay .card-text {
+    margin: 0 20px 0px;
+    line-height: 0.8;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#content_span{
+    margin-top: -4px;
+    font-size: 35px !important;
+}

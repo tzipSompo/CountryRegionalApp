@@ -1,0 +1,71 @@
+<div class="card card-main p-md-5" id="search_request">
+  <h5 class="card-header text-right card-header-section row">
+    <i class="fal fa-search color-orange"></i>&nbsp;&nbsp;חיפוש ארצות
+  </h5>
+  <div class="card-search text-right p-sm-2 " id="card-search">
+    <div>
+      <div class="card_search_wrap_sections">
+        <div class="card-search-section text-right">
+          <span>חיפוש לפי אות</span>
+
+          <select #filterByLetters class="form-control" name="country" [(ngModel)]="searchByLetterModel" id="country"
+            (change)="onChangefilterLetters(filterByLetters.options[filterByLetters.selectedIndex].value)">
+            <option [value]="undefined">בחר</option>
+            <option *ngFor="let letter of filterdletters" [value]="letter">{{letter}}</option>
+          </select>
+
+        </div>
+
+        <div class="card-search-section text-right">
+          <span>איתור לפי שם</span>
+          <input type="text" class="form-control" [(ngModel)]="searchModel" (input)="search($event.target)" />
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="card-body-search text-right  py-sm-3 px-sm-4" id="card-body">
+    <div class="row" *ngIf="filteredCountries">
+      <div class="col-sm-9">
+        <h6 class="text-right" id="total_result">נמצאו
+          <span class="color-orange" id="total_result_number">{{filteredCountries?.length}}</span>
+          ארצות
+        </h6>
+      </div>
+
+    </div>
+
+    <div *ngIf="filteredCountries.length>0">
+      <div class="row mt-3">
+        <div class="col-md-6 col-lg-4 col-xl-3 col-for-5" *ngFor="let country of filteredCountries">
+          <div class="card card-detail resultGridDisplay">
+
+            <div class="card-header card-header-detail pointer mb-3">
+              <img id="flag" [src]="country.flag">
+
+              <span id="content_span ltr">{{country.name}}</span>
+
+            </div>
+
+            <p class="card-text">
+              <span [title]="country.capital"> עיר בירה:</span>{{country.capital}}
+            </p>
+            <p class="card-text">
+              <span [title]="country.population">אוכלסיה:</span>{{country.population}}
+            </p>
+            <p class="card-text" id="crad_last_child">
+              <span>מטבעות:</span>
+              <span [title]="currency.name" *ngFor="let currency of country.currencies"> {{currency.name}}</span>
+            </p>
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
